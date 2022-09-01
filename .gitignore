@@ -1,0 +1,4 @@
+
+assets/**/*.go
+*.apk
+*.dmg

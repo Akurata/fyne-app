@@ -1,0 +1,8 @@
+Website = "https://alexkurata.com"
+
+[Details]
+  Icon = "assets/img/icon.png"
+  Name = "AlexTest"
+  ID = "com.alexkurata.app"
+  Version = "1.0.0"
+  Build = 8
