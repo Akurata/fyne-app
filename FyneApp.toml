@@ -4,5 +4,5 @@ Website = "https://alexkurata.com"
   Icon = "assets/img/dvd.png"
   Name = "DVD"
   ID = "com.alexkurata.dvd"
-  Version = "1.0.0"
-  Build = 20
+  Version = "0.0.2"
+  Build = 31

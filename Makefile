@@ -21,10 +21,40 @@ bundle:
 run:
 	@go run .
 
-.PHONY: android
-android:
-	@echo 1. Building Android bundle
+#
+# Packaging helpers
+#
+.PHONY: package-android
+package-android:
+	@echo Building Android package
 	@fyne package -os android
 
-	@echo 2. Installing app on device
+.PHONY: package-windows
+package-windows:
+	@echo Building Windows package
+	@fyne package -os windows 
+
+.PHONY: package-darwin
+package-darwin:
+	@echo Building MacOS package
+	@fyne package -os darwin
+
+.PHONY: package-ios
+package-ios:
+	@echo Building IOS package
+	@fyne package -os ios 
+
+#
+# Compile and send to connected android device
+#
+.PHONY: android
+android: package-android
+	@echo Installing Android app on device
 	@adb install $(apk_name)
+
+
+#
+# Prepare all files for release
+#
+.PHONY: release
+release: bundle package-android package-windows

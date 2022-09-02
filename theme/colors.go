@@ -17,12 +17,9 @@ var Primary color.Color = hexToColor(primary)
 // https://github.com/carbon-design-system/carbon/blob/v10/packages/colors/src/colors.js
 var colorMap = map[fyne.ThemeColorName]uint32{
 	theme.ColorNameBackground: gray100,
-
-	theme.ColorNameHover: gray100,
-
-	theme.ColorNameButton:  primary,
-	theme.ColorNamePrimary: primary,
-	// theme.ColorNameHover:
+	theme.ColorNameHover:      gray100,
+	theme.ColorNameButton:     primary,
+	theme.ColorNamePrimary:    primary,
 
 	// Imported colors from carbon
 	fyne.ThemeColorName("ui-background"): 0x000000,
