@@ -1,4 +1,5 @@
-
+.vscode
 assets/**/*.go
 *.apk
 *.dmg
+fyne_metadata_init.go

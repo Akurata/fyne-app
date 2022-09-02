@@ -1,4 +1,6 @@
 
+apk_name="DVD.apk"
+
 .PHONY: bundle
 bundle:
 	@echo Bundling images...
@@ -25,4 +27,4 @@ android:
 	@fyne package -os android
 
 	@echo 2. Installing app on device
-	@adb install .\AlexTest.apk
+	@adb install $(apk_name)
